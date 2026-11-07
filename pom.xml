@@ -14,18 +14,25 @@
     </properties>
 
     <dependencies>
-
         <dependency>
             <groupId>jakarta.servlet</groupId>
             <artifactId>jakarta.servlet-api</artifactId>
             <version>6.0.0</version>
             <scope>provided</scope>
         </dependency>
-
     </dependencies>
 
     <build>
         <finalName>modern-webapp</finalName>
+         <pluginManagement>
+          <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.4.0</version>
+            </plugin>
+          </plugins>
+          </pluginManagement>         
     </build>
 
 </project>
